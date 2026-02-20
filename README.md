@@ -4,7 +4,7 @@ A responsive, horizontal weather card designed for digital signage with a clean,
 
 ## Features
 - **Responsive 2:1 Layout**: Optimized for wide-screen digital displays.
-- **Teal Theme**: High-contrast teal background with white typography for maximum readability.
+- **Red Theme**: High-contrast red background with white typography for maximum readability.
 - **Dynamic Date**: Automatically updates the current date and day.
 - **Animated SVG Icon**: Minimalist sun icon with rotating rays for subtle visual interest.
 - **URL Configuration**: Customize the display without changing code.

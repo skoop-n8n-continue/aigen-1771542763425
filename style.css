@@ -1,5 +1,5 @@
 :root {
-    --primary-teal: #00b7af;
+    --primary-theme: #D32F2F;
     --text-white: #ffffff;
     --sun-yellow: #FFD700;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .weather-card {
-    background-color: var(--primary-teal);
+    background-color: var(--primary-theme);
     width: 90vw;
     max-width: 900px;
     aspect-ratio: 2 / 1;
