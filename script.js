@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Weather Signage Loaded');
     
     // Uncomment the following line to make the date dynamic
-    // updateDate();
+    updateDate();
 });
 
 /**
