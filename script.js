@@ -8,16 +8,37 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initial updates
     updateDate();
+    updateForecastDays();
     handleUrlParams();
-    
+
     // Update date every minute to handle midnight transitions
-    setInterval(updateDate, 60000);
-    
+    setInterval(() => {
+        updateDate();
+        updateForecastDays();
+    }, 60000);
+
     // Periodic page reload to ensure long-term stability (every 24 hours)
     setInterval(() => {
         window.location.reload();
     }, 86400000);
 });
+
+/**
+ * Updates the forecast day labels based on the current date
+ */
+function updateForecastDays() {
+    const dayElements = document.querySelectorAll('.forecast-day');
+    if (!dayElements || dayElements.length === 0) return;
+
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const now = new Date();
+
+    dayElements.forEach((el, index) => {
+        const forecastDate = new Date();
+        forecastDate.setDate(now.getDate() + index + 1);
+        el.textContent = days[forecastDate.getDay()];
+    });
+}
 
 /**
  * Updates the date display to the current day

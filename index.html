@@ -8,7 +8,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Weather Signage</title>
-    <link rel="stylesheet" href="style.css?v=sky-blue-v1">
+    <link rel="stylesheet" href="style.css?v=forecast-v1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
@@ -39,8 +39,48 @@
                 </g>
             </svg>
         </div>
+
+        <div class="forecast-section">
+            <div class="forecast-item">
+                <div class="forecast-day">Tue</div>
+                <div class="forecast-icon">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="20" fill="#FFD700" />
+                    </svg>
+                </div>
+                <div class="forecast-temp">22°</div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-day">Wed</div>
+                <div class="forecast-icon">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="20" fill="#FFD700" />
+                        <path d="M70,70 Q85,70 85,55 Q85,40 70,40 Q70,25 55,25 Q40,25 40,40 Q25,40 25,55 Q25,70 40,70 Z" fill="#ffffff" opacity="0.8" />
+                    </svg>
+                </div>
+                <div class="forecast-temp">20°</div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-day">Thu</div>
+                <div class="forecast-icon">
+                    <svg viewBox="0 0 100 100">
+                        <path d="M70,70 Q85,70 85,55 Q85,40 70,40 Q70,25 55,25 Q40,25 40,40 Q25,40 25,55 Q25,70 40,70 Z" fill="#ffffff" />
+                    </svg>
+                </div>
+                <div class="forecast-temp">18°</div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-day">Fri</div>
+                <div class="forecast-icon">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="20" fill="#FFD700" />
+                    </svg>
+                </div>
+                <div class="forecast-temp">21°</div>
+            </div>
+        </div>
     </div>
-    <script src="script.js?v=sky-blue-v1"></script>
+    <script src="script.js?v=forecast-v1"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
