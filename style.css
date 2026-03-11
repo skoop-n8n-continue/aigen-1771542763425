@@ -1,5 +1,6 @@
 :root {
-    --primary-theme: #D32F2F;
+    --primary-theme: #1A5276; /* Deep Navy */
+    --secondary-theme: #5DADE2; /* Sky Blue */
     --text-white: #ffffff;
     --sun-yellow: #FFD700;
 }
@@ -11,7 +12,7 @@
 }
 
 body {
-    background-color: #1c262f; 
+    background-color: #0B1622; /* Very dark navy */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +23,7 @@ body {
 
 .weather-card {
     background-color: var(--primary-theme);
+    background: linear-gradient(135deg, var(--secondary-theme) 0%, var(--primary-theme) 100%);
     width: 90vw;
     max-width: 900px;
     aspect-ratio: 2 / 1;
